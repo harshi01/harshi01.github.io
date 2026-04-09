@@ -1,85 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshita Pawa | Portfolio</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; color:#333; }
-    header { background:#111; color:#fff; padding:20px; text-align:center; }
-    section { padding:40px; max-width:900px; margin:auto; }
-    h2 { border-bottom:2px solid #ddd; padding-bottom:10px; }
-    .card { background:#fff; padding:20px; margin:20px 0; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
-    .skills span { display:inline-block; background:#eee; padding:8px 12px; margin:5px; border-radius:5px; }
-    footer { text-align:center; padding:20px; background:#111; color:#fff; }
-    a { color:#0077b5; text-decoration:none; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshita Pawa | Senior Data Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body { font-family: 'Inter', sans-serif; margin:0; background:#0b1220; color:#e5e7eb; }
+header { background:linear-gradient(135deg,#1f2937,#020617); padding:70px 20px; text-align:center; }
+h1 { margin:0; font-size:42px; }
+p.subtitle { color:#9ca3af; }
+section { max-width:1100px; margin:auto; padding:50px 20px; }
+/* background:#111827*/
+h2 { color:#60a5fa; border-bottom:1px solid #374151; padding-bottom:10px; }
+.card { background:#111827; padding:25px; border-radius:14px; margin-top:20px; box-shadow:0 6px 25px rgba(0,0,0,0.4); }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:20px; }
+.skills span { background:#1f2937; padding:8px 12px; margin:6px; display:inline-block; border-radius:6px; font-size:14px; }
+a { color:#60a5fa; text-decoration:none; }
+.icon { margin-right:8px; color:#60a5fa; }
+.chart-container { max-width:500px; margin:20px auto; }
+
+/* Hover animation */
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(96,165,250,0.25);
+}
+
+.project-card:hover {
+  background: linear-gradient(135deg, #1e293b, #111827);
+}
+
+footer { text-align:center; padding:25px; background:#020617; font-size:14px; }
+</style>
 </head>
+
 <body>
 
 <header>
-  <h1>Harshita Pawa</h1>
-  <p>Senior Data Analyst | Product & Marketing Analytics</p>
-  <p>
-    <a href="mailto:harshitapawa112@gmail.com">Email</a> |
-    <a href="https://www.linkedin.com/in/harshitapawa/" target="_blank">LinkedIn</a>
-  </p>
+<h1>Harshita Pawa</h1>
+<p class="subtitle">Senior Data Analyst | Product, Marketing & Analytics Engineering</p>
+<p>
+<i class="fa-solid fa-envelope icon"></i><a href="mailto:harshitapawa112@gmail.com">harshitapawa112@gmail.com</a> |
+<i class="fa-brands fa-linkedin icon"></i><a href="https://www.linkedin.com/in/harshitapawa/" target="_blank">LinkedIn</a>
+</p>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <div class="card">
-    <p>Senior Data Analyst with 5+ years of experience in customer journey analytics, digital marketing, and data engineering. Skilled in SQL, Python, Tableau, and cloud platforms (AWS, GCP). Passionate about turning data into business impact.</p>
-  </div>
+<h2><i class="fa-solid fa-user icon"></i>Summary</h2>
+<div class="card">
+<p>Senior Data Analyst with 5+ years of experience in customer journey analytics, digital marketing performance measurement, and Go-To-Market (GTM) analytics across retail, e-commerce, and B2B domains. Proven expertise in campaign performance tracking, KPI frameworks, experimentation (A/B testing), and post-campaign insights to drive growth and ROI. Strong partner to Marketing, Product, Sales, and GTM teams, translating complex data into actionable insights using SQL, Python, Tableau, and cloud analytics platforms.</p>
+</div>
+</section>
 
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Infineon Technologies</h3>
-    <p><strong>Data Specialist</strong> (2023 - Present)</p>
-    <ul>
-      <li>Built and optimized ETL pipelines using AWS Glue & GCP</li>
-      <li>Created 15+ dashboards for campaign performance tracking</li>
-      <li>Improved processing time by 30% using PySpark</li>
-    </ul>
-  </div>
+<section>
+<h2><i class="fa-solid fa-gears icon"></i>Core Skills</h2>
+<div class="card skills">
+<span>SQL</span><span>Python</span><span>R</span><span>PySpark</span><span>Spark</span><span>Scala</span>
+<span>Tableau</span><span>Power BI</span><span>Looker</span><span>Domo</span>
+<span>AWS</span><span>GCP</span><span>Azure</span><span>BigQuery</span><span>Glue</span>
+<span>Hadoop</span><span>Hive</span><span>Airflow</span><span>Databricks</span>
+<span>A/B Testing</span><span>Hypothesis Testing</span><span>Regression</span>
+<span>Marketing Analytics</span><span>Customer Journey</span><span>CDP</span>
+<span>Google Analytics</span><span>Ads Platforms</span>
+</div>
+</section>
 
-  <div class="card">
-    <h3>TCS</h3>
-    <p><strong>Data Analyst</strong> (2021 - 2022)</p>
-    <ul>
-      <li>Developed Hadoop-based pipelines</li>
-      <li>Processed 500M+ records daily</li>
-      <li>Automated reporting tasks saving 15+ hours/week</li>
-    </ul>
-  </div>
+<section>
+<h2><i class="fa-solid fa-chart-line icon"></i>Impact Highlights</h2>
+<div class="card chart-container">
+<canvas id="impactChart"></canvas>
+</div>
+</section>
 
-  <h2>Skills</h2>
-  <div class="card skills">
-    <span>SQL</span><span>Python</span><span>PySpark</span><span>Tableau</span>
-    <span>AWS</span><span>GCP</span><span>BigQuery</span><span>A/B Testing</span>
-    <span>Data Engineering</span><span>Marketing Analytics</span>
-  </div>
 
-  <h2>Projects</h2>
-  <div class="card">
-    <h3>Customer Data Platform (CDP)</h3>
-    <p>Built unified customer profiles integrating marketing and sales data to improve targeting and ROI.</p>
-  </div>
+<section>
+<h2><i class="fa-solid fa-briefcase icon"></i>Professional Experience</h2>
 
-  <div class="card">
-    <h3>Churn Prediction</h3>
-    <p>Developed ML model to predict customer churn and improve retention strategies.</p>
-  </div>
+<div class="card">
+<h3>Infineon Technologies</h3>
+<p><strong>Senior Data Analyst / Data Engineer (2023–Present)</strong></p>
+<ul>
+<li>Led end-to-end development of scalable ETL pipelines across AWS and GCP processing 10TB+ datasets, improving performance by 30%</li>
+<li>Owned and delivered Customer Data Platform (CDP) enabling unified customer profiles and full funnel visibility across marketing and sales</li>
+<li>Designed and implemented KPI frameworks for GTM, marketing, and product teams driving data-driven decision making</li>
+<li>Developed 15+ executive dashboards tracking traffic, engagement, conversion, and revenue metrics</li>
+<li>Performed A/B testing and hypothesis-driven analysis to optimize campaign performance and improve ROI</li>
+<li>Integrated multi-source data (web, product, revenue, campaigns) for customer journey analytics</li>
+<li>Built automated alerting and monitoring systems improving pipeline reliability and reducing failure response time by 50%</li>
+<li>Acted as project lead owning planning, stakeholder alignment, delivery timelines, and business impact</li>
+<li>Collaborated cross-functionally with Product, Marketing, and Sales leadership teams</li>
+<li>Contributed to GenAI initiatives including prompt engineering and semantic search capabilities</li>
+</ul>
+</div>
 
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: harshitapawa112@gmail.com</p>
-    <p>Location: Bangalore, India</p>
-  </div>
+<div class="card">
+<h3>Tata Consultancy Services</h3>
+<p><strong>Data Analyst (2021–2022)</strong></p>
+<ul>
+<li>Built and maintained Hadoop and AWS-based pipelines processing 500M+ records daily</li>
+<li>Automated data workflows reducing manual effort by 70%</li>
+<li>Delivered dashboards and insights improving business efficiency by 10%</li>
+</ul>
+</div>
+
+</section>
+
+<section>
+<h2><i class="fa-solid fa-diagram-project icon"></i>Projects</h2>
+<div class="grid">
+
+<div class="card"><h3>Customer Data Platform</h3><p>Unified marketing and sales data to create a 360° customer view enabling better targeting and personalization.</p></div>
+<div class="card"><h3>Marketing Analytics Dashboard</h3><p>Tracked CTR, CVR, ROI and funnel metrics for campaign optimization.</p></div>
+<div class="card"><h3>A/B Testing Framework</h3><p>Designed experimentation models to optimize product and marketing strategies.</p></div>
+<div class="card"><h3>ETL Optimization</h3><p>Improved pipeline performance by 30% through PySpark optimizations.</p></div>
+<div class="card"><h3>Churn Prediction</h3><p>ML model to identify high-risk users and improve retention.</p></div>
+<div class="card"><h3>Real-time Monitoring</h3><p>Automated alerting system improving reliability and reducing downtime.</p></div>
+
+</div>
+</section>
+
+<!-- Case Study Placeholder -->
+<section>
+<h2><i class="fa-solid fa-book-open icon"></i>Case Studies</h2>
+<div class="card">
+<p><i class="fa-solid fa-lightbulb"></i> Coming soon: Detailed case studies on A/B testing, funnel optimization, and GTM analytics.</p>
+</div>
+</section>
+
+<section>
+<h2><i class="fa-solid fa-chart-pie icon"></i>Skills Distribution</h2>
+<div class="card chart-container">
+<canvas id="skillsChart"></canvas>
+</div>
+</section>
+
+
+<section>
+<h2><i class="fa-solid fa-trophy icon"></i>Achievements</h2>
+<div class="card">
+<ul>
+<li>Improved ETL efficiency by 30%</li>
+<li>Increased dashboard adoption by 40%</li>
+<li>Smart India Hackathon Runner-up (2x)</li>
+</ul>
+</div>
+</section>
+
+<script>
+const impactCtx = document.getElementById('impactChart');
+new Chart(impactCtx, {
+  type: 'bar',
+  data: {
+    labels: ['ETL Efficiency', 'Dashboard Adoption', 'Traffic Growth'],
+    datasets: [{
+      label: '% Improvement',
+      data: [30, 40, 30]
+    }]
+  }
+});
+
+const skillsCtx = document.getElementById('skillsChart');
+new Chart(skillsCtx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Analytics', 'Data Engineering', 'Visualization'],
+    datasets: [{
+      data: [40, 35, 25]
+    }]
+  }
+});
+</script>
+
+
+<section>
+<h2><i class="fa-solid fa-address-card icon"></i>Contact</h2>
+<div class="card">
+<p><i class="fa-solid fa-envelope icon"></i>Email: harshitapawa112@gmail.com</p>
+<p><i class="fa-solid fa-location-dot icon"></i>Bangalore, India</p>
+</div>
 </section>
 
 <footer>
-  <p>© 2026 Harshita Pawa</p>
+<p>© 2026 Harshita Pawa | Designed for Senior Data Analyst Portfolio</p>
 </footer>
 
 </body>
